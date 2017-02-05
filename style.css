@@ -1,0 +1,64 @@
+body {
+	background-image: url(connect.png);
+	font-family: "Questrial", sans Serif;
+	height: 100%;
+}
+.navbar-default {
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3));
+}
+.top {
+	font-family: "Questrial";
+	background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), #4aaaa5);
+	text-shadow: 1px 1px 0px #4aaaa5;
+	padding-left: 20px;
+}
+.main-text {
+	background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.2), #fff);
+	border: 2px solid black;
+	margin: 10px 0 10px 0;
+}
+.headline {
+	color: #4aaaa5;
+	text-shadow: 1px 1px 0px black;
+	border-bottom: 2px black solid;
+}
+.logo2 {
+	width: 50%;
+	float: left;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+p {
+	font-family: "News Cycle", sans Serif;
+	font-size: 20px;
+}
+.small-logo {
+	width: 33%;
+	float:left;
+	justify-content: space-around;
+}
+.small-logo:hover {
+	filter: invert(100%);
+}
+.foot {
+	background:linear-gradient(to right, rgba(0, 0, 0, 0.25), #777);
+	font-size: 22px;
+	font-family: "Questrial";
+	text-shadow: 1px 1px 0px #4aaaa5;
+}
+.wrapper {
+	min-height: 100%;
+	margin-bottom: -35px;
+}
+.push, footer {
+	height: 35px;
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+a {
+	color: #4aaaa5;
+	font-size: 18px;
+	font-weight: bold;
+	text-shadow: 1px 1px 0px black;
+}

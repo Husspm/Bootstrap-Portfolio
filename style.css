@@ -41,7 +41,7 @@ p {
 	filter: invert(100%);
 }
 .foot {
-	background:linear-gradient(to right, rgba(0, 0, 0, 0.25), #777);
+	background:linear-gradient(to right, rgba(0, 0, 0, 1), #777);
 	font-size: 22px;
 	font-family: "Questrial";
 	text-shadow: 1px 1px 0px #4aaaa5;

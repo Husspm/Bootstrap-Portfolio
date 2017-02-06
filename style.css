@@ -144,6 +144,9 @@ textarea {
 	width: 100%;
 	max-width: 100%;
 }
+.glyphicon {
+	font-size: 16px;
+}
 .btn {
 	margin: 10px 0 10px 0;
 	background: linear-gradient(to bottom right, rgba(3, 3, 3, 0.8), #4aaaa5);

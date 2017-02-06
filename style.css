@@ -5,6 +5,7 @@ body {
 }
 .navbar-default {
 	background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
+	border-bottom: black solid 8px;
 	opacity: 0;
 	animation-name: pop;
 	animation-duration: 1s;
@@ -22,7 +23,7 @@ body {
 }
 .main-text {
 	background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.6), #fff);
-	border: 2px solid black;
+	border: 8px solid black;
 	border-radius: 3%;
 	margin: 10px 0px 10px 0px;
 	opacity: 0;
@@ -35,13 +36,13 @@ body {
 	transition-duration: 1s;
 }
 .main-text:hover {
-	box-shadow: 7px 7px 18px black;
+	box-shadow: 7px 7px 18px 5px #555;
 	background-image: url(escheresque.png)
 }
 .main-text2 {
 	background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.6), #fff);
-	border: 2px solid black;
-	border-radius: 3%;
+	border: 8px solid black;
+	border-radius: 2%;
 	margin: 10px 0px 10px 0px;
 	opacity: 0;
 	animation-name: pop;
@@ -53,8 +54,8 @@ body {
 	transition-duration: 1s;
 }
 .main-text2:hover {
-	box-shadow: 7px 7px 18px black;
-	background-image: url(escheresque_ste.png);
+	box-shadow: 7px 7px 18px 5px #555;
+	background-image: url(escheresque.png);
 }
 .headline {
 	color: #4aaaa5;
@@ -90,9 +91,8 @@ p {
 	font-size: 22px;
 }
 .small-logo {
-	width: 33%;
+	width: 33.3%;
 	float:left;
-	justify-content: space-around;
 	transition-property: filter;
 	transition-duration: 0.6s;
 }
@@ -101,6 +101,7 @@ p {
 }
 .foot {
 	background:linear-gradient(to right, rgba(80, 80, 80, 1), #4aaaa5);
+	border-top: black solid 8px;
 	font-size: 25px;
 	font-family: "Questrial";
 	text-shadow: 1px 1px 1px #fff;
@@ -115,7 +116,7 @@ p {
 	margin-bottom: -35px;
 }
 .push, footer {
-	height: 35px;
+	height: 43px;
 	position: fixed;
     bottom: 0;
     width: 100%;
@@ -139,8 +140,9 @@ a:hover {
 	border-bottom: 1px solid black;
 	display: inline-block;
 }
-.msg {
-	height: 150px;
+textarea {
+	width: 100%;
+	max-width: 100%;
 }
 .btn {
 	margin: 10px 0 10px 0;
@@ -170,7 +172,7 @@ input {
 		font-size: 20px;
 	}
 	footer {
-		height: 30px;
+		height: 38px;
 	}
 	p {
 		font-size: 18px;
@@ -184,7 +186,7 @@ input {
 		font-size: 16px;
 	}
 	footer {
-		height: 25px;
+		height: 33px;
 	}
 	p {
 		font-size: 16px;

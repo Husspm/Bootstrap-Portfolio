@@ -49,12 +49,12 @@ body {
 	animation-fill-mode: forwards;
 	animation-delay: 0.5s;
 	box-shadow: 1px 1px 5px black;
-	transition-property: box-shadow, background-image, color; 
+	transition-property: box-shadow, background-image; 
 	transition-duration: 1s;
 }
 .main-text2:hover {
 	box-shadow: 7px 7px 18px black;
-	background-image: url(escheresque_ste.png)
+	background-image: url(escheresque_ste.png);
 }
 .headline {
 	color: #4aaaa5;

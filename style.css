@@ -113,6 +113,22 @@ a:hover {
 	color: #4aaaa5;
 	background: radial-gradient(#fff, #bbb)
 }
+.lbl {
+	border-bottom: 1px solid black;
+	display: inline-block;
+}
+.msg {
+	height: 150px;
+}
+.btn {
+	margin: 10px 0 10px 0;
+	background: linear-gradient(to bottom right, rgba(3, 3, 3, 0.8), #4aaaa5);
+	font-size: 22px;
+	text-shadow: 1px 1px 0px white;
+}
+input {
+	width: 100%;
+}
 @media screen and (max-width: 768px) {
 	.container {
 		width: 93%;

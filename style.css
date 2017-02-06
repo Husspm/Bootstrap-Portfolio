@@ -4,23 +4,61 @@ body {
 	height: 100%;
 }
 .navbar-default {
-	background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3));
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
+	opacity: 0;
+	animation-name: pop;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+@keyframes pop {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
 }
 .top {
 	font-family: "Questrial";
 	background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), #4aaaa5);
-	text-shadow: 1px 1px 0px #4aaaa5;
+	text-shadow: 1px 1px 1px #fff;
 	padding-left: 20px;
 }
 .main-text {
-	background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.2), #fff);
+	background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.6), #fff);
 	border: 2px solid black;
-	margin: 10px 0 10px 0;
+	border-radius: 3%;
+	margin: 10px 0px 10px 0px;
+	opacity: 0;
+	animation-name: pop;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-delay: 0.5s;
+	box-shadow: 1px 1px 5px black;
+	transition-property: box-shadow; 
+	transition-duration: 1s;
+}
+.main-text:hover {
+	box-shadow: 7px 7px 18px black;
 }
 .headline {
 	color: #4aaaa5;
 	text-shadow: 1px 1px 0px black;
 	border-bottom: 2px black solid;
+}
+.ima-block {
+	display: inline-block;
+	width: 48%;
+	position: relative;
+	margin-right: 1.5%;
+}
+.ima-text {
+	position: absolute;
+	bottom: 10%;
+	background-color: #4aaaa5;
+	width: 100%;
+	text-align: center;
+	font-size: 30px;
+}
+.logo3 {
+	width: 100%;
+	float: left;
 }
 .logo2 {
 	width: 50%;
@@ -30,21 +68,28 @@ body {
 }
 p {
 	font-family: "News Cycle", sans Serif;
-	font-size: 20px;
+	font-size: 22px;
 }
 .small-logo {
 	width: 33%;
 	float:left;
 	justify-content: space-around;
+	transition-property: filter;
+	transition-duration: 0.6s;
 }
 .small-logo:hover {
 	filter: invert(100%);
 }
 .foot {
-	background:linear-gradient(to right, rgba(0, 0, 0, 1), #777);
-	font-size: 22px;
+	background:linear-gradient(to right, rgba(80, 80, 80, 1), #4aaaa5);
+	font-size: 25px;
 	font-family: "Questrial";
-	text-shadow: 1px 1px 0px #4aaaa5;
+	text-shadow: 1px 1px 1px #fff;
+	opacity: 0;
+	animation-name: pop;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
 }
 .wrapper {
 	min-height: 100%;
@@ -61,4 +106,49 @@ a {
 	font-size: 18px;
 	font-weight: bold;
 	text-shadow: 1px 1px 0px black;
+	transition-property: background;
+	transition-duration: 0.6s;
+}
+a:hover {
+	color: #4aaaa5;
+	background: radial-gradient(#fff, #bbb)
+}
+@media screen and (max-width: 768px) {
+	.container {
+		width: 93%;
+	}
+	p {
+		font-size: 20px;
+	}
+}
+@media screen and (max-width: 500px) {
+	.ima-text {
+		font-size: 20px;
+	}
+	.ima-block {
+		margin-right: 1%;
+	}
+	.foot {
+		font-size: 20px;
+	}
+	footer {
+		height: 30px;
+	}
+	p {
+		font-size: 18px;
+	}
+}
+@media screen and (max-width: 360px) {
+	.ima-text {
+		font-size: 16px;
+	}
+	.foot {
+		font-size: 16px;
+	}
+	footer {
+		height: 25px;
+	}
+	p {
+		font-size: 16px;
+	}
 }

@@ -5,7 +5,7 @@ body {
 }
 .navbar-default {
 	background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
-	border-bottom: black solid 8px;
+	border-bottom: black solid 6px;
 	opacity: 0;
 	animation-name: pop;
 	animation-duration: 1s;
@@ -23,7 +23,7 @@ body {
 }
 .main-text {
 	background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.6), #fff);
-	border: 8px solid black;
+	border: 6px solid black;
 	border-radius: 3%;
 	margin: 10px 0px 10px 0px;
 	opacity: 0;
@@ -41,7 +41,7 @@ body {
 }
 .main-text2 {
 	background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.6), #fff);
-	border: 8px solid black;
+	border: 6px solid black;
 	border-radius: 2%;
 	margin: 10px 0px 10px 0px;
 	opacity: 0;
@@ -101,7 +101,7 @@ p {
 }
 .foot {
 	background:linear-gradient(to right, rgba(80, 80, 80, 1), #4aaaa5);
-	border-top: black solid 8px;
+	border-top: black solid 6px;
 	font-size: 25px;
 	font-family: "Questrial";
 	text-shadow: 1px 1px 1px #fff;

@@ -61,6 +61,7 @@ body {
 	color: #4aaaa5;
 	text-shadow: 1px 1px 0px black;
 	border-bottom: 2px black solid;
+	font-size: 35px;
 }
 .ima-block {
 	display: inline-block;
@@ -193,5 +194,8 @@ input {
 	}
 	p {
 		font-size: 16px;
+	}
+	.headline {
+		font-size: 29px;
 	}
 }

@@ -157,6 +157,31 @@ input {
 .link-switch2 {
 	display: none;
 }
+.open>.dropdown-toggle.btn-default {
+background-image: url(escheresque.png);
+}
+.open>.dropdown-menu {
+    display: inline-flex;
+    }
+.dropdown-menu {
+	position: inherit;
+	float: none;
+}
+.dropdown-menu>.active>a {
+	background-image: url(escheresque.png);
+	color: #666;
+	background-color: #fff;
+}
+.dropdown-menu>.active>a:hover {
+background-image: url(escheresque.png);
+color: #666;
+background-color: #fff;
+}
+.dropdown-menu>li>a:hover {
+background-image: url(escheresque_ste.png);
+color: #fff;
+background-color: #fff;
+}
 @media screen and (max-width: 768px) {
 	.container {
 		width: 93%;
@@ -165,7 +190,7 @@ input {
 		font-size: 20px;
 	}
 	.link-switch {
-		/*display: none;*/
+		display: none;
 	}
 	.link-switch2 {
 		display: block;

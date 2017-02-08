@@ -1,5 +1,6 @@
 body {
 	background-image: url(connect.png);
+	/*Originally had only one font, but later added a 2nd*/
 	font-family: "Questrial", sans Serif;
 	height: 100%;
 }
@@ -33,12 +34,12 @@ each element has a different delay*/
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
 	animation-delay: 0.5s;
-	box-shadow: 1px 1px 5px black;
+	box-shadow: 0px 0px 0px 3px #4aaaa5;
 	transition-property: box-shadow, background-image; 
 	transition-duration: 1s;
 }
 .main-text:hover {
-	box-shadow: 7px 7px 18px 5px #555;
+	box-shadow: 0px 0px 0px 6px #4aaaa5;
 	background-image: url(escheresque.png)
 }
 .main-text2 {
@@ -51,12 +52,12 @@ each element has a different delay*/
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
 	animation-delay: 1s;
-	box-shadow: 1px 1px 5px black;
+	box-shadow: 0px 0px 0px 3px #4aaaa5;
 	transition-property: box-shadow, background-image; 
 	transition-duration: 1s;
 }
 .main-text2:hover {
-	box-shadow: 7px 7px 18px 5px #555;
+	box-shadow: 0px 0px 0px 6px #4aaaa5;
 	background-image: url(escheresque.png);
 }
 .headline {
@@ -118,7 +119,7 @@ p {
 	min-height: 100%;
 	margin-bottom: -35px;
 }
-.push, footer {
+.push, footer {	
 	height: 43px;
 	position: fixed;
     bottom: 0;

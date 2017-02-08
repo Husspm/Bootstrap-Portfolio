@@ -7,12 +7,14 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!--This is my stylesheet that I used to override and modify the bootstrap presets for colors, bgs, font-sizes, etc-->	
 	<link rel="stylesheet" href="style.css">
 	<link rel="icon" href="GasMask.png">
 	<title>Patrick Hussey-Contact</title>
 </head>
 <body>
 <div class="wrapper">
+<!--This contains all the elements of my navigation-->
 	<nav class="navbar navbar-default">
 		<div class="container">
 			<div class="row">
@@ -20,17 +22,20 @@
 				<h1 class="text-center">Patrick Hussey</h1>
 				</div>
 				<div class="col-lg-9 col-md-8 col-xs-12">
+				<!--This contains the dropmenu, the class link-switch2 is used to change the display from
+				none to inherit using a media query-->
 					<div class="link-switch2 dropdown">
   				<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
     			Menu
     			<span class="caret"></span>
   				</button>
   				<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    			<li><a href="index.html">About Me</a></li>
+    			<li><a href="index.html">About</a></li>
     			<li><a href="Portfolio.html">Portfolio</a></li>
     			<li class="active"><a href="#">Contact</a></li>
   				</ul>
 				</div> 					
+				<!--this contains the normal menu, the class link-switch is used to change its display to none when the dropmenu kicks in-->
 					<ul class="link-switch nav nav-tabs nav-justified"> 
 					<li role="presentation"><a href="index.html">About</a></li>
 					<li role="presentation"><a href="Portfolio.html">Portfolio</a></li>
@@ -40,8 +45,10 @@
 			</div>		
 		</div>
 	</nav>
+		<!--This starts the main body of the page-->
 		<div class="container">
 		<div class="row">
+			<!--originally main-text applied to both this div and the one containing the sidebar, but for style experimentation I eventually changed the sidebar to main-text2, although they are almost indentical again...for the moment, the only real difference is a 0.5s delay on the animation to make them appear in sequence-->
 			<div class="col-lg-6 col-md-6 col-xs-12 main-text">
 			<h2 class="headline">Contact</h2>
 			<p class="lbl">Name</p>
@@ -52,7 +59,9 @@
 			<textarea class="msg" rows="5"></textarea><br>
 			<button class= "btn btn-lg" type="submit">Submit</button>
 			</div>
+			<!--this is far spacing purposes, just to make sure nothing strange happened I made sure all cols added up to 12-->
 			<div class="col-lg-1 col-md-1"></div>
+			<!--This starts the sidebar, originally shared all its properties with main-text, but wanted to mess with some different styles, especially in regards to hover pseudo classes-->
 			<div class="col-lg-5 col-md-5 col-xs-12 main-text2">
 			<h2 class="headline">Connect with Me</h2>
 				<a href="https://github.com/Husspm" target="_blank">
@@ -67,10 +76,11 @@
 			</div>
 		</div>
 	</div>
+	<!--This trick worked on my non bootstrap page, but didn't on my bootstrap page, but when I saw an example it looks like the used this trick in-line instead of a stylesheet-->
 	<div class="push"></div>
 </div>	
 	<footer class="foot footer text-center">&copy;Copyright 2017 Patrick Hussey</footer>
-</body>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>

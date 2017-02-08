@@ -11,6 +11,8 @@ body {
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
 }
+/*This is what makes everything appear in sequence
+each element has a different delay*/
 @keyframes pop {
 	0% {opacity: 0;}
 	100% {opacity: 1;}
@@ -48,7 +50,7 @@ body {
 	animation-name: pop;
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
-	animation-delay: 0.5s;
+	animation-delay: 1s;
 	box-shadow: 1px 1px 5px black;
 	transition-property: box-shadow, background-image; 
 	transition-duration: 1s;
@@ -110,7 +112,7 @@ p {
 	animation-name: pop;
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
-	animation-delay: 1s;
+	animation-delay: 1.5s;
 }
 .wrapper {
 	min-height: 100%;
@@ -127,11 +129,12 @@ a {
 	font-size: 18px;
 	font-weight: bold;
 	text-shadow: 1px 1px 0px black;
-	transition-property: background-image;
-	transition-duration: 0.6s;
+	transition-property: color;
+	transition-duration: 0.4s;
+	transition-timing-function: ease-in-out;
 }
 a:hover {
-	color: #4aaaa5;
+	color: #fff;
 	background-image: url(escheresque_ste.png);
 }
 .nav-tabs>li.active>a {
@@ -166,6 +169,11 @@ background-image: url(escheresque.png);
 .dropdown-menu {
 	position: inherit;
 	float: none;
+}
+.dropdown-menu>li>a {
+	display: inline-flex;
+	color: #4aaaa5;
+	padding: 2px 15px;
 }
 .dropdown-menu>.active>a {
 	background-image: url(escheresque.png);
@@ -230,5 +238,8 @@ background-color: #fff;
 	}
 	.headline {
 		font-size: 29px;
+	}
+	a {
+		font-size: 16px;
 	}
 }

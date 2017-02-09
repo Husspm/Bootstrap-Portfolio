@@ -191,6 +191,11 @@ background-image: url(escheresque_ste.png);
 color: #fff;
 background-color: #fff;
 }
+@media (max-width: 991px){
+.nav-tabs.nav-justified>li>a{
+	border-bottom: 0px solid black;
+	}
+}
 @media screen and (max-width: 768px) {
 	.container {
 		width: 93%;
